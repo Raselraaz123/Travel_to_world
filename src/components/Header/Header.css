@@ -6,8 +6,6 @@
 padding: 0 80px;
 background-color: rgb(188, 208, 201);
 
-
-
 }
 .logo-style img{
   width: 60px;
@@ -22,5 +20,19 @@ background-color: rgb(188, 208, 201);
 
 }
 .nav-link-style a:hover{
-  color:rgb(148, 99, 125);
+  color:rgb(195, 113, 157);
+}
+@media only screen and (Max-width:500px) {
+  .nav-container{
+ display: flex;
+ flex-direction: column;
+  /* justify-content:center;
+  align-items: center; */
+
+
+}
+.nav-link-style a{
+  display: flex;
+
+}
 }
