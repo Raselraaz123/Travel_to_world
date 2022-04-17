@@ -1,5 +1,10 @@
 import React from 'react';
 import './ServiceDetail.css'
+import { ArrowRightIcon } from "@heroicons/react/solid";
+
+
+
+
 const ServiceDetail = ({ service }) => {
   console.log(service);
   const { picture, name, price, description } = service;
@@ -13,10 +18,13 @@ const ServiceDetail = ({ service }) => {
             <p className="card-text">
               <small>{description}</small>
             </p>
-            <h4>{price}</h4>
+            <h4> Price : $ {price}</h4>
           </div>
           <div className="">
-            <button className="w-100 py-3  border-0 button-pos">Book Now</button>
+            <button className="w-100 py-3  border-0 button-pos">
+              Book Now
+              <ArrowRightIcon className="icon-style text-blue-500" />
+            </button>
           </div>
         </div>
       </div>
