@@ -1,0 +1,23 @@
+.nav-container{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+padding: 0 80px;
+background-color: rgb(188, 208, 201);
+
+}
+.logo-style img{
+  width: 60px;
+  height: 60px;
+}
+.nav-link-style a{
+  text-decoration: none;
+  margin-left: 30px;
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+
+}
+.nav-link-style a:hover{
+  color:rgb(246, 119, 187);
+}

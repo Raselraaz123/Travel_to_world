@@ -1,0 +1,16 @@
+.service-container{
+  width: auto;
+  height: 650px;
+   /* border: 1px solid grey; */
+   box-shadow: 7px 7px 10px ghostwhite;
+   position: relative;
+}
+.button-pos{
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 0;
+}
+.button-pos:hover{
+  color: orange;
+}
