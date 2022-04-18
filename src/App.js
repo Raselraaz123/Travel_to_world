@@ -5,11 +5,13 @@ import Header from './components/Header/Header';
 import AboutMe from './components/Page/AboutMe/AboutMe';
 import Banner from './components/Page/Banner/Banner';
 import Blog from './components/Page/Blog/Blog';
+import Checkout from './components/Page/Checkout/Checkout';
 import Footer from './components/Page/Footer/Footer';
 import Home from './components/Page/Home/Home';
 import Login from './components/Page/Login/Login';
 import NotFound from './components/Page/NotFound/NotFound';
 import Register from './components/Page/Register/Register';
+import RequierAuth from './components/Page/RequierAuth/RequierAuth';
 import Services from './components/Page/Services/Services';
 
 function App() {
@@ -24,6 +26,11 @@ function App() {
         <Route path='/aboutme' element={<AboutMe></AboutMe>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='/checkout' element={
+          <RequierAuth>
+            <Checkout></Checkout>
+          </RequierAuth>
+        }></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

@@ -5,6 +5,7 @@ import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from '../../../firebase.init'
 import { async } from '@firebase/util';
 import Loading from '../Loading/Loading'
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
   const navigate = useNavigate();
@@ -74,6 +75,7 @@ const Register = () => {
           Please Login
         </Link>
       </p>
+      <SocialLogin></SocialLogin>
     </div>
   );
 };

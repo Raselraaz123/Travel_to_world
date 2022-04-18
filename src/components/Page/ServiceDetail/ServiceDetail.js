@@ -1,13 +1,18 @@
 import React from 'react';
 import './ServiceDetail.css'
 import { ArrowRightIcon } from "@heroicons/react/solid";
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
 
 const ServiceDetail = ({ service }) => {
   console.log(service);
-  const { picture, name, price, description } = service;
+  const { id, picture, name, price, description } = service;
+    const navigate = useNavigate();
+    const navigateToServiceDetail = (id) => {
+      // navigate(`../Checkout/${id}`);
+    };
   return (
     <div className="service-container mt-3 mb-3">
       <div className="col ">
@@ -21,10 +26,15 @@ const ServiceDetail = ({ service }) => {
             <h5> Price : $ {price}</h5>
           </div>
           <div className="">
-            <button className="w-100 py-3  border-0 button-pos">
-              Book Now
-              <ArrowRightIcon className="icon-style text-blue-500" />
-            </button>
+            <Link to="/checkout">
+              <button
+                onClick={() => navigateToServiceDetail(id)}
+                className="w-100 py-3  border-0 button-pos"
+              >
+                Book Now
+                <ArrowRightIcon className="icon-style text-blue-500" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

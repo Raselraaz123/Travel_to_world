@@ -7,6 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
   import "react-toastify/dist/ReactToastify.css";
 import auth from '../../../firebase.init';
 import Loading from '../Loading/Loading';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     const emailRef = useRef("");
@@ -101,7 +102,7 @@ const Login = () => {
           Reset Password
         </button>
       </p>
-
+<SocialLogin></SocialLogin>
       <ToastContainer />
     </div>
   );
