@@ -27,7 +27,7 @@ const Login = () => {
   }
 
 
-  let from = location.state?.from?.pathname || "/";
+  let from = location.state.from.pathname || "/";
   
   let errorElement;
   
@@ -55,10 +55,10 @@ const Login = () => {
     const navigateRegister = event => {
       navigate("/register");
   };
-    const ResetPassword = async (event) => {
+    const ResetPassword =  (event) => {
    
       if (email) {
-        await sendPasswordResetEmail(email);
+         sendPasswordResetEmail(email);
         toast("Sent email");
       } else {
         toast("please enter your email address");
