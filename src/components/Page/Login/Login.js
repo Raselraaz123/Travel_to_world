@@ -27,7 +27,7 @@ const Login = () => {
   }
 
 
-  let from = location.state.from.pathname || "/";
+  let from = location.state?.from?.pathname || "/";
   
   let errorElement;
   

@@ -7,7 +7,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 
 const ServiceDetail = ({ service }) => {
-  console.log(service);
+ 
   const { id, picture, name, price, description } = service;
     const navigate = useNavigate();
     const navigateToServiceDetail = (id) => {

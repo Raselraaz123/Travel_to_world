@@ -7,7 +7,7 @@ import HomePageService from '../HomePageService/HomePageService';
 const Home = () => {
   const [services] = useServices();
   const frist3Item = services.slice(0, 3)
-  console.log(frist3Item)
+ 
   return (
     <div>
       <Banner></Banner>
