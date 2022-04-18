@@ -22,6 +22,14 @@ background-color: rgb(188, 208, 201);
 .nav-link-style a:hover{
   color:rgb(195, 113, 157);
 }
+.btn-style{
+    margin-left: 30px;
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+background-color: rgb(188, 208, 201);
+}
 @media only screen and (Max-width:500px) {
   .nav-container{
  display: flex;

@@ -6,7 +6,6 @@ import Loading from '../Loading/Loading';
 
 const RequierAuth = ({ children }) => {
   const [user, loading] = useAuthState(auth);
-  console.log("inside requierAuth", user);
   const location = useLocation();
 
   if (loading) {
