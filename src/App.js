@@ -18,7 +18,7 @@ import Services from './components/Page/Services/Services';
 
 
 function App() {
-  
+  // app.js is main
   return (
     <div className="App">
       <Header></Header>
